@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getImageSize macros should return the image size for a valid file: should return the image size for a valid file 1`] = `
+
+import imageSize from '../../lib/index.macro';
+const size = imageSize('./__fixtures__/image.png');
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+const size = {
+  height: 4,
+  width: 2,
+}
+
+
+`;

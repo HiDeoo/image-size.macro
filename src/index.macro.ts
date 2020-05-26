@@ -63,13 +63,17 @@ function getImageSize(nodePath: NodePath, state: State): ImageSize {
   }
 
   // Get the image size.
-  const { height, width } = imageSize(imgPath)
+  try {
+    const { height, width } = imageSize(imgPath)
 
-  if (!height || !width) {
-    throwCodeFrameError(nodePath, 'Unable to compute the height and width of the image provided to image-size.macro.')
+    if (!height || !width) {
+      throwCodeFrameError(nodePath, 'Unable to compute the height and width of the image provided to image-size.macro.')
+    }
+
+    return { height, width }
+  } catch (error) {
+    throwCodeFrameError(nodePath, `image-size.macro could not measure image size: ${error.message}`)
   }
-
-  return { height, width }
 }
 
 /**
