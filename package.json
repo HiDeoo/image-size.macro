@@ -11,7 +11,8 @@
     "dev": "tsc && tsc -w",
     "lint": "eslint --max-warnings=0 --ext .ts src && tsc --noEmit",
     "pretest": "yarn build",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "yarn run test"
   },
   "dependencies": {
     "babel-plugin-macros": "2.8.0",
@@ -59,5 +60,10 @@
   "lint-staged": {
     "*.ts": "eslint --cache --fix",
     "*.{ts,json,md}": "prettier --write"
-  }
+  },
+  "files": [
+    "src",
+    "lib",
+    "image-size.macro.d.ts"
+  ]
 }
