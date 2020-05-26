@@ -84,4 +84,4 @@ export default createMacro(imageSizeMacro)
 /**
  * An image size composed of its width & height.
  */
-type ImageSize = { height: number; width: number }
+export type ImageSize = { height: number; width: number }
