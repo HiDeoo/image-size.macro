@@ -1,6 +1,7 @@
 {
   "name": "image-size.macro",
-  "version": "0.0.1",
+  "description": "Babel macro to get the size of an image size at build time",
+  "version": "0.1.0",
   "main": "lib/index.macro.js",
   "types": "./image-size.macro.d.ts",
   "author": "HiDeoo",
@@ -34,6 +35,15 @@
     "ts-jest": "26.0.0",
     "typescript": "3.9.3"
   },
+  "keywords": [
+    "image",
+    "size",
+    "dimensions",
+    "babel",
+    "macro",
+    "babel-plugin-macros"
+  ],
+  "homepage": "https://github.com/HiDeoo/image-size.macro",
   "repository": {
     "type": "git",
     "url": "https://github.com/HiDeoo/image-size.macro"

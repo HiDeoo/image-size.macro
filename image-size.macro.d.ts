@@ -10,7 +10,7 @@ import type { ImageSize } from './src/index.macro'
  * ```js
  * import imageSize from 'image-size.macro';
  *
- * const myImageSize = imageSize('my-image.png');
+ * const myImageSize = imageSize('./my-image.png');
  * ```
  *
  * ↓ ↓ ↓ ↓ ↓ ↓
